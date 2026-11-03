@@ -15,7 +15,6 @@
   --green:#144a38; --green2:#2e7d64; --sage:#9db89a; --ochre:#d98e32; --cream:#f7efdc;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.6;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.36 0 0 0 0 0.2 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.5;mix-blend-mode:multiply;
@@ -66,15 +65,14 @@ h1.title{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font
 .orbit{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%) rotate(-13deg);width:640px;height:190px;border:26px solid #111;border-radius:50%;border-top-color:transparent;border-bottom-color:rgba(17,17,17,.92)}
 .orbit2{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%) rotate(9deg);width:520px;height:150px;border:13px solid rgba(17,17,17,.8);border-radius:50%;border-left-color:transparent;border-right-color:transparent}
 @media(max-width:700px){.globe{width:220px;height:220px}.orbit{width:430px;height:130px;border-width:18px}.orbit2{width:350px}}
-.sticker{position:absolute;background:#fff;border:3px solid #fff;box-shadow:0 2px 0 rgba(0,0,0,.35),0 10px 22px rgba(0,0,0,.22);padding:8px 11px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.4;color:#222;max-width:190px;text-align:left;animation:bob 5s ease-in-out infinite}
+.sticker{position:absolute;background:#fff;border:3px solid #fff;box-shadow:0 2px 0 rgba(0,0,0,.35),0 10px 22px rgba(0,0,0,.22);padding:8px 11px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.4;color:#222;max-width:190px;text-align:left}
 .sticker b{color:var(--red)}
 .sticker small{color:#777}
-@keyframes bob{0%,100%{margin-top:0}50%{margin-top:-9px}}
 .st1{left:5%;top:20px;transform:rotate(-8deg)}
-.st2{right:6%;top:8px;transform:rotate(7deg);animation-delay:.7s}
-.st3{left:9%;bottom:26px;transform:rotate(5deg);animation-delay:1.2s}
-.st4{right:9%;bottom:38px;transform:rotate(-6deg);animation-delay:1.7s}
-.st5{left:42%;top:0;transform:rotate(-3deg);animation-delay:2.1s}
+.st2{right:6%;top:8px;transform:rotate(7deg)}
+.st3{left:9%;bottom:26px;transform:rotate(5deg)}
+.st4{right:9%;bottom:38px;transform:rotate(-6deg)}
+.st5{left:42%;top:0;transform:rotate(-3deg)}
 @media(max-width:700px){.st5{display:none}.sticker{max-width:145px;font-size:11px}}
 .actors{display:flex;justify-content:space-between;color:var(--red);font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;letter-spacing:2px;font-size:clamp(13px,2.4vw,19px);margin-top:2px;text-shadow:1px 1px 0 var(--cream)}
 .poster-bottom{border-top:2px solid var(--red);margin-top:14px;padding-top:10px;color:var(--red);text-align:center}
@@ -699,7 +697,6 @@ $("#rollAll").addEventListener("click",function(){$("#diceText").textContent=(la
 $("#rollTopic").addEventListener("click",function(){$("#diceText").textContent=U().diceTopic+" "+pick(D().TOPICS);$("#diceSub").textContent=U().diceTopicSub});
 
 applyLang();
-setInterval(function(){creepI++;if(feedMode==="p")renderFeed()},4200);
 </script>
 </body>
 </html>
