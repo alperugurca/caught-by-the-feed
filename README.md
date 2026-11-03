@@ -1,30 +1,31 @@
 # Caught by the Feed
 
-Tek dosyalik, iki dilli (TR/EN) bir kacis rehberi: Akisa Yakalandin / Caught by the Feed.
+A single-file, bilingual (EN/TR) escape guide: Akisa Yakalandin / Caught by the Feed.
 
-Kisisellestirilmis akis, reklam, haber ve fiyat sistemlerinden cikmak icin:
-10 soruluk test, 7 katman, 21 sahne, platform adimlari ve 7 gunluk bilet plani.
+How to get out of personalized feeds, ads, news and pricing systems:
+a 10-question test, 7 layers, 21 scenes, platform steps and a 7-day ticket plan.
 
-Canli: https://alperugurca.github.io/caught-by-the-feed/
+Live: https://alperugurca.github.io/caught-by-the-feed/
 
-## Tasarim
+## Design
 
-Sayfa, Jia Zhang-Ke filmi Caught by the Tides icin hazirlanan afisin
-malzemesiyle kuruldu: eskimis krem kagit, kirmizi afis yazisi,
-yesil dalga deseni, siyah girdap ve beyaz kenarli kolaj cikartmalar.
-Afisin kendisi degildir, resmi bir sayfa degildir.
+The page is built with the materials of the poster made for Jia Zhang-Ke's
+film Caught by the Tides: aged cream paper, red poster type, green wave
+patterns, a black vortex and white-edged collage stickers.
+It is not the poster itself, and this is not an official page.
 
-## Gizlilik
+## Privacy
 
-Cerez yok, analitik yok, hesap yok. Dil tercihi, test ve bilet ilerlemesi
-yalniz ziyaretcinin kendi tarayicisinda (localStorage) durur.
+No cookies, no analytics, no account. Language choice, test answers and
+ticket progress stay only in the visitor's own browser (localStorage).
 
-## Bilgi notu
+## Sources
 
-Platform adimlari 3 Kasim 2026 tarihinde resmi yardim sayfalarina
-bakilarak kontrol edildi. Kaynaklar sayfanin en altindaki kunye
-blokunda listelenir. Fiyat degisimi tek basina kisisel fiyati gostermez.
+Platform steps were checked against official help pages on 3 November 2026.
+Sources are listed in the billing block at the bottom of the page.
+A price change alone does not prove a personal price.
 
-## Calistirma
+## Run it
 
-index.html dosyasini tarayicida acmak yeterlidir. Sunucu gerekmez.
+Just open index.html in a browser. No server needed.
+Use the EN/TR button at the top right to switch language.
