@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AKIŞA YAKALANDIN: kişiselleştirilmiş cehennemden kaçış</title>
+<meta name="description" content="Akıntı seni de mi yakaladı? Kişiselleştirilmiş akıştan çıkış: test, sahneler, platform rehberi ve 7 günlük biletler.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f2e8d5'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%23144a38' stroke-width='8'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23c1271d'/%3E%3C/svg%3E">
+<style>
+/* Yon: "Caught by the Tides" afisi. Eskimis krem kagit, kirmizi afis yazisi,
+   yesil dalga deseni, siyah girdap, beyaz kenarli kolaj cikartmalar.
+   Afisin kendisi degil, o dunyanin malzemesi kullanildi. */
+:root{
+  --paper:#f2e8d5; --paper2:#eadfc6; --ink:#191919; --red:#c1271d; --red2:#e03126;
+  --green:#144a38; --green2:#2e7d64; --sage:#9db89a; --ochre:#d98e32; --cream:#f7efdc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.6;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.36 0 0 0 0 0.2 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.15 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E")}
+a{color:var(--red)}
+button{font-family:inherit;cursor:pointer}
+.sans{font-family:"Helvetica Neue",Arial,sans-serif}
+.display{font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Franklin Gothic Medium",sans-serif;font-weight:400;letter-spacing:.5px}
+
+/* ust yazi: elestiri alintisi */
+.topquote{text-align:center;padding:18px 12px 4px;color:var(--red)}
+.topquote .q{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(18px,3vw,26px);letter-spacing:1.5px}
+.topquote .who{font-size:11px;letter-spacing:2.5px;margin-top:2px}
+
+/* yan dikey alintilar */
+.sidequote{position:fixed;top:50%;z-index:5;color:var(--red);font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;letter-spacing:3px;font-size:15px;white-space:nowrap}
+.sidequote small{display:block;font-family:Georgia,serif;letter-spacing:1.5px;font-size:9px;margin-top:6px}
+.sidequote.left{left:8px;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl}
+.sidequote.right{right:8px;transform:translateY(-50%);writing-mode:vertical-rl}
+@media(max-width:1220px){.sidequote{display:none}}
+
+.frame{max-width:1060px;margin:10px auto 0;padding:0 14px}
+.poster{border:2px solid var(--red);position:relative;overflow:hidden;background:#dce3c8;
+  background-image:radial-gradient(circle at 18% 22%,rgba(217,142,50,.55) 0 90px,transparent 91px),radial-gradient(circle at 84% 16%,rgba(20,74,56,.35) 0 120px,transparent 121px),linear-gradient(160deg,#b9c9a3 0%,#7fae8d 34%,#3d7d5f 62%,#144a38 100%)}
+.poster-waves{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.poster-in{position:relative;padding:26px 28px 20px;text-align:center}
+
+/* defne odulleri */
+.laurels{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.laurel{color:var(--red);text-align:center;font-family:"Helvetica Neue",Arial,sans-serif;max-width:170px}
+.laurel .wreath{font-size:24px;line-height:1;border:2px solid var(--red);border-radius:50%;width:64px;height:64px;margin:0 auto;display:flex;align-items:center;justify-content:center;background:rgba(247,239,220,.65);font-family:Georgia,serif}
+.laurel b{display:block;font-size:13px;letter-spacing:1px;margin-top:5px}
+.laurel span{font-size:9.5px;letter-spacing:1.5px}
+@media(max-width:700px){.laurel span{display:none}.laurel .wreath{width:48px;height:48px;font-size:18px}}
+
+.cn{color:var(--red);font-size:clamp(17px,3vw,25px);letter-spacing:8px;margin-top:14px;font-weight:700}
+h1.title{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(52px,10.5vw,118px);line-height:.94;margin:4px 0 2px;color:var(--red2);letter-spacing:1px;
+  -webkit-text-stroke:2px #1d1d1d;text-shadow:4px 4px 0 var(--cream),8px 8px 0 rgba(25,25,25,.85);text-transform:uppercase}
+.byline{color:var(--cream);font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:3px;font-size:clamp(11px,2vw,15px);text-shadow:1px 1px 0 #144a38;margin-top:8px}
+.byline b{color:#ffd9a8}
+
+/* girdap sahnesi */
+.stage{position:relative;height:360px;margin-top:6px}
+@media(max-width:700px){.stage{height:300px}}
+.globe{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle at 38% 32%,#eef0d8 0 18%,#b9c9a3 42%,#5d9271 74%,#144a38 100%);border:2px solid rgba(25,25,25,.55);overflow:hidden}
+.globe:after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(20,74,56,.35) 1.2px,transparent 1.3px);background-size:11px 11px;opacity:.5}
+.orbit{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%) rotate(-13deg);width:640px;height:190px;border:26px solid #111;border-radius:50%;border-top-color:transparent;border-bottom-color:rgba(17,17,17,.92)}
+.orbit2{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%) rotate(9deg);width:520px;height:150px;border:13px solid rgba(17,17,17,.8);border-radius:50%;border-left-color:transparent;border-right-color:transparent}
+@media(max-width:700px){.globe{width:220px;height:220px}.orbit{width:430px;height:130px;border-width:18px}.orbit2{width:350px}}
+.sticker{position:absolute;background:#fff;border:3px solid #fff;box-shadow:0 2px 0 rgba(0,0,0,.35),0 10px 22px rgba(0,0,0,.22);padding:8px 11px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.4;color:#222;max-width:190px;text-align:left;animation:bob 5s ease-in-out infinite}
+.sticker b{color:var(--red)}
+.sticker small{color:#777}
+@keyframes bob{0%,100%{margin-top:0}50%{margin-top:-9px}}
+.st1{left:5%;top:20px;transform:rotate(-8deg)}
+.st2{right:6%;top:8px;transform:rotate(7deg);animation-delay:.7s}
+.st3{left:9%;bottom:26px;transform:rotate(5deg);animation-delay:1.2s}
+.st4{right:9%;bottom:38px;transform:rotate(-6deg);animation-delay:1.7s}
+.st5{left:42%;top:0;transform:rotate(-3deg);animation-delay:2.1s}
+@media(max-width:700px){.st5{display:none}.sticker{max-width:145px;font-size:11px}}
+.actors{display:flex;justify-content:space-between;color:var(--red);font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;letter-spacing:2px;font-size:clamp(13px,2.4vw,19px);margin-top:2px;text-shadow:1px 1px 0 var(--cream)}
+.poster-bottom{border-top:2px solid var(--red);margin-top:14px;padding-top:10px;color:var(--red);text-align:center}
+.poster-bottom .big{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(16px,3vw,25px);letter-spacing:2px}
+.poster-bottom .small{font-size:10.5px;letter-spacing:2px;font-family:"Helvetica Neue",Arial,sans-serif}
+.hero-copy{max-width:760px;margin:18px auto 0;text-align:center;font-size:16.5px}
+.hero-copy b{background:var(--cream);padding:0 4px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:16px 0 6px}
+.btn{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:1.5px;font-size:13px;padding:13px 24px;border:2px solid var(--ink);text-decoration:none;display:inline-block}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.btn-red:hover{background:#8f1c14}
+.btn-paper{background:var(--cream);color:var(--ink)}
+.btn-paper:hover{background:#fff}
+.fineprint{text-align:center;color:#7a6a4f;font-size:12px;font-family:"Helvetica Neue",Arial,sans-serif}
+
+/* dil + bolum gezgini: afis altindaki kucuk program */
+.program{max-width:1060px;margin:22px auto 0;padding:0 14px}
+.program-in{border:2px solid var(--ink);background:var(--cream);display:flex;flex-wrap:wrap}
+.program-in a{flex:1;min-width:130px;text-align:center;padding:11px 6px;text-decoration:none;color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:1.5px;border-right:1px solid var(--ink)}
+.program-in a:last-child{border-right:0}
+.program-in a:hover{background:var(--red);color:#fff}
+
+/* bolumler */
+.chapter{max-width:1060px;margin:0 auto;padding:44px 14px 4px}
+.chap-head{text-align:center;margin-bottom:8px}
+.chap-no{color:var(--red);font-family:"Helvetica Neue",Arial,sans-serif;font-size:11.5px;letter-spacing:4px}
+.chap-head h2{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(30px,5.4vw,48px);letter-spacing:1.5px;margin:3px 0 4px;color:var(--ink);text-transform:uppercase}
+.chap-head h2 span{color:var(--red)}
+.chap-head p{max-width:680px;margin:0 auto;color:#55483a}
+.waveband{height:26px;margin:26px 0 4px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='26' viewBox='0 0 72 26'%3E%3Cpath d='M2 20 A16 16 0 0 1 34 20 A16 16 0 0 1 66 20' fill='none' stroke='%23144a38' stroke-width='3'/%3E%3Cpath d='M10 20 A8 8 0 0 1 26 20 M42 20 A8 8 0 0 1 58 20' fill='none' stroke='%23d98e32' stroke-width='2.5'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center}
+
+/* sahne kartlari: kolaj */
+.scenes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+@media(max-width:920px){.scenes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.scenes{grid-template-columns:1fr}}
+.scene{background:#fffdf6;border:1px solid #d8cbae;padding:20px;box-shadow:4px 5px 0 rgba(20,74,56,.18);position:relative}
+.scene:nth-child(3n+1){transform:rotate(-.7deg)}
+.scene:nth-child(3n+2){transform:rotate(.6deg)}
+.scene:nth-child(3n){transform:rotate(-.3deg)}
+.scene .tape{position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);width:86px;height:20px;background:rgba(217,142,50,.45);border-left:1px dashed rgba(0,0,0,.15);border-right:1px dashed rgba(0,0,0,.15)}
+.scene .no{font-family:"Helvetica Neue",Arial,sans-serif;font-size:10.5px;letter-spacing:2.5px;color:var(--red)}
+.scene h3{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-weight:400;font-size:21px;letter-spacing:.6px;margin:5px 0 7px;line-height:1.15}
+.scene p{font-size:14px;margin:0;color:#3d352a}
+.scene ul{font-size:13px;margin:9px 0 0;padding-left:17px;color:#4d4335;display:none}
+.scene.open ul{display:block}
+.scene .foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e3d7bd;margin-top:13px;padding-top:10px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:11.5px}
+.scene .price{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:19px;color:var(--green)}
+.linkbtn{background:none;border:0;border-bottom:2px solid var(--red);color:var(--red);font-weight:700;font-size:12px;padding:0}
+.filters{text-align:center;margin:16px 0 2px}
+.filters button{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:12px;letter-spacing:1.5px;background:var(--cream);border:2px solid var(--ink);padding:9px 16px;margin:3px}
+.filters button.on{background:var(--red);border-color:var(--red);color:#fff}
+
+/* alinti cubugu */
+.pullquote{text-align:center;color:var(--red);max-width:820px;margin:28px auto 0;padding:0 10px}
+.pullquote .t{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(20px,4vw,32px);letter-spacing:1.5px;line-height:1.25}
+.pullquote .w{font-size:11px;letter-spacing:2.5px;font-family:"Helvetica Neue",Arial,sans-serif;margin-top:5px}
+
+/* secmeler / test */
+.casting{display:grid;grid-template-columns:300px 1fr;gap:18px;margin-top:20px;align-items:start}
+@media(max-width:860px){.casting{grid-template-columns:1fr}}
+.casting-side{background:var(--green);color:var(--cream);padding:22px;transform:rotate(-.6deg);box-shadow:5px 6px 0 rgba(0,0,0,.2)}
+.casting-side h3{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-weight:400;letter-spacing:1px;font-size:23px;margin:0 0 8px}
+.casting-side p{font-size:13.5px;color:#dce8d8}
+.casting-main{background:#fffdf6;border:1px solid #d8cbae;padding:22px;box-shadow:4px 5px 0 rgba(20,74,56,.16)}
+fieldset{border:1px solid #d8cbae;margin:0;padding:16px}
+legend{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:19px;letter-spacing:.5px;padding:0 7px}
+.casting label{display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:14.5px;padding:6px 8px;cursor:pointer}
+.casting label:hover{background:#f3ead2}
+progress{width:100%;height:8px;appearance:none}
+progress::-webkit-progress-bar{background:#d8cbae}
+progress::-webkit-progress-value{background:var(--red)}
+.bigscore{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:58px;color:var(--red);line-height:1}
+
+/* tablo: bilesim */
+table.cast{width:100%;border-collapse:collapse;background:#fffdf6;border:1px solid #d8cbae;margin-top:18px}
+table.cast th{font-family:"Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:2px;text-align:left;color:var(--red);padding:10px 12px;border-bottom:2px solid var(--ink)}
+table.cast td{padding:11px 12px;border-bottom:1px solid #e3d7bd;vertical-align:top;font-size:14.5px}
+tr.zonerow{cursor:pointer}
+tr.zonerow:hover td{background:#f3ead2}
+tr.zonerow.active td{background:#eee3c2}
+.meter{height:7px;background:#e3d7bd;min-width:110px}
+.meter i{display:block;height:100%;background:var(--green)}
+
+/* program notlari / platformlar */
+.showtimes{display:flex;flex-wrap:wrap;margin-top:18px;border:2px solid var(--ink);background:var(--cream)}
+.showtimes button{flex:1;min-width:140px;border:0;border-right:1px solid var(--ink);background:transparent;padding:12px 6px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.5px}
+.showtimes button:last-child{border-right:0}
+.showtimes button.on{background:var(--ink);color:var(--cream)}
+.notes{background:#fffdf6;border:1px solid #d8cbae;border-top:0;padding:22px 26px;box-shadow:4px 5px 0 rgba(20,74,56,.14)}
+.notes ol{max-width:780px;margin:6px 0;padding-left:21px}
+.notes li{margin:10px 0;font-size:15px}
+
+/* biletler */
+.tickets{display:grid;gap:14px;margin-top:20px}
+.ticket{display:flex;background:#fffdf6;border:2px solid var(--ink);max-width:860px;margin:0 auto;width:100%;text-align:left;position:relative}
+.ticket .stub{flex:0 0 118px;background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px;border-right:2px dashed var(--ink);text-align:center}
+.ticket .stub .d{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:25px;line-height:1}
+.ticket .stub .adm{font-size:9.5px;letter-spacing:2.5px;font-family:"Helvetica Neue",Arial,sans-serif;margin-top:5px}
+.ticket .body{flex:1;padding:14px 18px}
+.ticket h3{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-weight:400;font-size:20px;margin:0;letter-spacing:.5px}
+.ticket p{font-size:13.5px;color:#55483a;margin:4px 0}
+.ticket ul{font-size:13px;margin:5px 0;padding-left:17px;color:#3d352a}
+.ticket .check{flex:0 0 74px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid #e3d7bd;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:1px;color:#777}
+.ticket .check input{width:22px;height:22px}
+.ticket.done{opacity:.62}
+.ticket.done .stub{background:var(--green)}
+.ticket.done h3{text-decoration:line-through}
+.stamp-done{display:none;color:var(--red);border:2px solid var(--red);font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:10px;letter-spacing:1.5px;padding:2px 7px;transform:rotate(-7deg);margin-top:7px}
+.ticket.done .stamp-done{display:inline-block}
+
+/* surpriz seans */
+.surprise{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+@media(max-width:800px){.surprise{grid-template-columns:1fr}}
+.surp-red{background:var(--red);color:#fff;padding:26px;transform:rotate(-.5deg);box-shadow:6px 7px 0 rgba(0,0,0,.22)}
+.surp-red .lbl{font-family:"Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:3px;opacity:.85}
+.surp-red .big{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:24px;line-height:1.3;margin:12px 0;min-height:96px}
+.surp-red button{background:#fff;color:var(--red);border:0;padding:12px 20px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:1px}
+.surp-paper{background:#fffdf6;border:1px solid #d8cbae;padding:26px;transform:rotate(.5deg);box-shadow:4px 5px 0 rgba(20,74,56,.16)}
+.surp-paper .big{font-size:19px;font-weight:700;line-height:1.45;margin:10px 0;min-height:84px}
+
+.rules{max-width:780px;margin:18px auto 0;background:#fffdf6;border:1px solid #d8cbae;padding:8px 26px;box-shadow:4px 5px 0 rgba(20,74,56,.14)}
+.rules li{margin:10px 0}
+.billing{max-width:1060px;margin:34px auto 0;padding:0 14px 36px;text-align:center}
+.billing .block{font-family:"Helvetica Neue",Arial,sans-serif;font-size:9.5px;letter-spacing:1.2px;line-height:1.9;color:#4d4335;text-transform:uppercase;border-top:2px solid var(--ink);padding-top:14px}
+.billing a{color:var(--red)}
+.billing .thanks{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;color:var(--red);font-size:21px;letter-spacing:3px;margin-top:10px}
+</style>
+<style>
+.langbtn{position:fixed;top:12px;right:12px;z-index:80;background:var(--red);color:#fff;border:2px solid #191919;box-shadow:3px 3px 0 #191919;padding:9px 16px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:2px;font-size:13px}
+.langbtn:hover{background:#8f1c14}
+.langbtn small{font-weight:400;opacity:.85;letter-spacing:1px}
+</style>
+</head>
+<body>
+
+<button class="langbtn" id="langBtn" type="button">EN <small>/ ENGLISH</small></button>
+
+<div class="sidequote left"><span data-tr="TELEFON BENİ DİNLİYOR MU?" data-en="IS MY PHONE LISTENING?">TELEFON BENİ DİNLİYOR MU?</span><small data-tr="HERKESİN AKLINDAKİ SORU" data-en="THE QUESTION IN EVERY HEAD">HERKESİN AKLINDAKİ SORU</small></div>
+<div class="sidequote right"><span data-tr="HERKES BUNU KONUŞUYOR" data-en="EVERYONE IS TALKING ABOUT IT">HERKES BUNU KONUŞUYOR</span><small data-tr="SENİN ÇEVRENİN HERKESİ" data-en="EVERYONE IN YOUR CIRCLE">SENİN ÇEVRENİN HERKESİ</small></div>
+
+<div class="topquote">
+  <div class="q" data-tr="&#34;AKINTIYA KAPILMAK ZORUNDA DEĞİLSİN.&#34;" data-en="&#34;YOU DO NOT HAVE TO DRIFT WITH THE CURRENT.&#34;">"AKINTIYA KAPILMAK ZORUNDA DEĞİLSİN."</div>
+  <div class="who" data-tr="BU SAYFA, KENDİ ELEŞTİRİSİ" data-en="THIS PAGE, REVIEWING ITSELF">BU SAYFA, KENDİ ELEŞTİRİSİ</div>
+</div>
+
+<div class="frame">
+  <div class="poster">
+    <svg class="poster-waves" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1000 700" aria-hidden="true">
+      <g fill="none" stroke="#144a38" stroke-width="10" opacity=".55">
+        <path d="M-20 640 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0"/>
+        <path d="M-20 680 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0 a90 90 0 0 1 180 0"/>
+      </g>
+      <g fill="none" stroke="#f2e8d5" stroke-width="5" opacity=".5">
+        <circle cx="120" cy="120" r="52"/><circle cx="120" cy="120" r="34"/><circle cx="120" cy="120" r="16"/>
+        <circle cx="890" cy="180" r="64"/><circle cx="890" cy="180" r="42"/><circle cx="890" cy="180" r="20"/>
+        <circle cx="820" cy="560" r="48"/><circle cx="820" cy="560" r="28"/>
+        <circle cx="180" cy="520" r="40"/><circle cx="180" cy="520" r="22"/>
+      </g>
+    </svg>
+    <div class="poster-in">
+      <div class="laurels">
+        <div class="laurel"><div class="wreath">★</div><b data-tr="KAÇIŞ SEÇKİSİ" data-en="ESCAPE SELECTION">KAÇIŞ SEÇKİSİ</b><span data-tr="RESMİ PROGRAM 2026" data-en="OFFICIAL PROGRAMME 2026">RESMİ PROGRAM 2026</span></div>
+        <div class="laurel"><div class="wreath">◐</div><b data-tr="HERKESE AYNI" data-en="SAME FOR ALL">HERKESE AYNI</b><span data-tr="KİŞİYE ÖZEL DEĞİL" data-en="NOT MADE FOR ONE">KİŞİYE ÖZEL DEĞİL</span></div>
+        <div class="laurel"><div class="wreath">₺0</div><b data-tr="GİRİŞ ÜCRETSİZ" data-en="ENTRY FREE">GİRİŞ ÜCRETSİZ</b><span data-tr="BİLET YOK, ÜYELİK YOK" data-en="NO TICKET, NO ACCOUNT">BİLET YOK, ÜYELİK YOK</span></div>
+      </div>
+
+      <div class="cn" data-tr="流 れ に 捕 ま る" data-en="CAUGHT BY THE CURRENT">流 れ に 捕 ま る</div>
+      <h1 class="title" data-tr-html="Akışa<br>Yakalandın" data-en-html="Caught by<br>the Feed">Akışa<br>Yakalandın</h1>
+      <div class="byline" data-tr-html="BİR KAÇIŞ FİLMİ &nbsp;·&nbsp; YÖNETEN <b>SEN</b> &nbsp;·&nbsp; SENARYO <b>ALGORİTMA</b>" data-en-html="AN ESCAPE FILM &nbsp;·&nbsp; DIRECTED BY <b>YOU</b> &nbsp;·&nbsp; WRITTEN BY <b>THE ALGORITHM</b>">BİR KAÇIŞ FİLMİ &nbsp;·&nbsp; YÖNETEN <b>SEN</b> &nbsp;·&nbsp; SENARYO <b>ALGORİTMA</b></div>
+
+      <div class="stage" aria-hidden="true">
+        <div class="globe"></div>
+        <div class="orbit"></div>
+        <div class="orbit2"></div>
+        <div class="sticker st1" data-sticker="0"></div>
+        <div class="sticker st2" data-sticker="1"></div>
+        <div class="sticker st3" data-sticker="2"></div>
+        <div class="sticker st4" data-sticker="3"></div>
+        <div class="sticker st5" data-sticker="4"></div>
+      </div>
+
+      <div class="actors"><span data-tr="SEN" data-en="YOU">SEN</span><span data-tr="TELEFONUN" data-en="YOUR PHONE">TELEFONUN</span><span data-tr="ALGORİTMA" data-en="THE ALGORITHM">ALGORİTMA</span></div>
+    </div>
+    <div class="poster-bottom">
+      <div class="big" data-tr="UZUN YILLARIN PROFİLİ ÜZERİNE, TEK HAFTADA ÇEKİLDİ" data-en="SHOT IN ONE WEEK, ON A PROFILE BUILT OVER YEARS">UZUN YILLARIN PROFİLİ ÜZERİNE, TEK HAFTADA ÇEKİLDİ</div>
+      <div class="small" data-tr="GEÇMİŞ · AKIŞ · REKLAM · FİYAT AYNI SAHNEDE" data-en="HISTORY · FEED · ADS · PRICE IN THE SAME SCENE">GEÇMİŞ · AKIŞ · REKLAM · FİYAT AYNI SAHNEDE</div>
+    </div>
+  </div>
+
+  <p class="hero-copy" data-tr-html="Telefonun seni senden iyi tanıyor gibi mi geliyor? Dün düşündüğün şey bugün reklam, aklından geçen şarkı bugün liste. <b>Bu bir his değil, bir akıntı.</b> Ve akıntıdan nasıl çıkılacağını bu program anlatıyor: önce kendini ölç, sonra sahneleri uygula, en son 7 biletlik planı tamamla." data-en-html="Does your phone feel like it knows you too well? You thought of a thing yesterday and see an ad today. Half a song in your head turns into a full list. <b>That is not a feeling only. It is a current.</b> This programme tells how to get out of it: first measure yourself, then play the scenes, then use up the 7 tickets.">Telefonun seni senden iyi tanıyor gibi mi geliyor?</p>
+  <div class="hero-cta">
+    <a class="btn btn-red" href="#secmeler" data-tr="SEÇMELERE KATIL: TEST" data-en="JOIN THE AUDITIONS: TEST">SEÇMELERE KATIL: TEST</a>
+    <a class="btn btn-paper" href="#biletler" data-tr="7 BİLETİ GÖR" data-en="SEE THE 7 TICKETS">7 BİLETİ GÖR</a>
+  </div>
+  <p class="fineprint" data-tr="Bu sayfa çerez kullanmaz, analitik çalıştırmaz, hesap istemez. Afişteki bildirimler örnektir, gerçek değildir." data-en="This page uses no cookies, runs no analytics and asks for no account. The notes on the poster are examples, not real.">Bu sayfa çerez kullanmaz.</p>
+</div>
+
+<nav class="program" aria-label="Program">
+  <div class="program-in">
+    <a href="#oyuncular" data-tr="OYUNCULAR" data-en="CAST">OYUNCULAR</a><a href="#secmeler" data-tr="SEÇMELER" data-en="AUDITIONS">SEÇMELER</a><a href="#sahneler" data-tr="SAHNELER" data-en="SCENES">SAHNELER</a><a href="#program-notlari" data-tr="PROGRAM NOTLARI" data-en="PROGRAMME NOTES">PROGRAM NOTLARI</a><a href="#biletler" data-tr="BİLETLER" data-en="TICKETS">BİLETLER</a><a href="#surpriz" data-tr="SÜRPRİZ SEANS" data-en="SURPRISE SCREENING">SÜRPRİZ SEANS</a>
+  </div>
+</nav>
+
+<section class="chapter" id="oyuncular">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM I" data-en="PART I">BÖLÜM I</div>
+    <h2 data-tr-html="Oyuncu <span>Kadrosu</span>" data-en-html="The <span>Cast</span>">Oyuncu <span>Kadrosu</span></h2>
+    <p data-tr="Filmin kötüleri kişiler değil, mekanizmalardır. Hepsi senin davranışınla beslenir. Besini kesersen sahnedeki güçleri azalır." data-en="The villains of the film are not people. They are mechanisms. All of them feed on your behavior. Cut the food and their power on stage goes down.">Filmin kötüleri kişiler değil, mekanizmalardır.</p>
+  </div>
+  <div class="scenes" id="whyGrid"></div>
+  <div class="pullquote"><div class="t" data-tr="&#34;SİSTEM RUH HALİNİ BİLMEZ. DAVRANIŞINDAN TAHMİN EDER.&#34;" data-en="&#34;THE SYSTEM DOES NOT KNOW YOUR MOOD. IT GUESSES FROM BEHAVIOR.&#34;">"SİSTEM RUH HALİNİ BİLMEZ."</div><div class="w" data-tr="BU SAYFA, MEKANİZMA NOTU" data-en="THIS PAGE, NOTE ON THE MECHANISM">BU SAYFA</div></div>
+
+  <div class="notes" style="margin-top:22px">
+    <b class="display" style="font-size:19px;letter-spacing:.5px" data-tr="İKİ MONTAJ, AYNI GÜN." data-en="TWO CUTS, SAME DAY.">İKİ MONTAJ, AYNI GÜN.</b>
+    <span style="color:#7a6a4f;font-size:13px" class="sans" data-tr=" İkisi de örnektir, canlı veri değildir." data-en=" Both are examples, not live data."> İkisi de örnektir.</span>
+    <p class="sans" style="font-size:13.5px">
+      <a href="#" id="btnFeedP" style="font-weight:700" data-tr="sana kurgulanmış hali" data-en="the cut made for you">sana kurgulanmış hali</a> &nbsp;·&nbsp;
+      <a href="#" id="btnFeedG" data-tr="herkese aynı hali, tarih sırasıyla" data-en="the same cut for all, by date">herkese aynı hali</a>
+    </p>
+    <div id="feedBox"></div>
+    <p id="feedNote" style="color:#7a6a4f;font-size:13px"></p>
+  </div>
+  <div class="waveband"></div>
+</section>
+
+<section class="chapter" id="secmeler">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM II · SEÇMELER" data-en="PART II · AUDITIONS">BÖLÜM II</div>
+    <h2 data-tr-html="Hangi Rolde <span>Sıkıştın?</span>" data-en-html="Which Role Are <span>You Stuck In?</span>">Hangi Rolde <span>Sıkıştın?</span></h2>
+    <p data-tr="10 soru. Doğru rol yok, sana uyan rol var. Sonunda hangi sahneden başlaman gerektiği çıkar." data-en="10 questions. There is no right role, only the role that fits you. At the end you see which scene to start with.">10 soru.</p>
+  </div>
+  <div class="casting">
+    <div class="casting-side">
+      <h3 data-tr="SEÇME ODASI" data-en="AUDITION ROOM">SEÇME ODASI</h3>
+      <p data-tr="Jüri yok, puan tablosu yok. Bu test bilimsel bir ölçüm değildir, tanı koymaz. Yalnızca kendi alışkanlıklarına bakman için vardır." data-en="No jury, no score board. This test is not a scientific measure and it does not diagnose. It is here so you can look at your own habits.">Jüri yok.</p>
+      <p><span id="quizStep">Soru 1 / 10</span></p>
+      <progress id="quizBar" value="0" max="10"></progress>
+      <p style="font-size:12px;color:#b9cfb4" data-tr="Cevapların bu cihazdan dışarı çıkmaz." data-en="Your answers do not leave this device.">Cevapların çıkmaz.</p>
+    </div>
+    <div class="casting-main">
+      <div id="quizBox"></div>
+      <div id="quizResult" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="bilesim">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM III · KÜNYE" data-en="PART III · CREDITS">BÖLÜM III</div>
+    <h2 data-tr-html="Filmin <span>Bileşimi</span>" data-en-html="What the Film <span>Is Made Of</span>">Filmin <span>Bileşimi</span></h2>
+    <p data-tr="Yedi katman, yedi malzeme. Yüzdeler araştırma sonucu değildir, katmanları karşılaştırmak için göreli bir ölçüdür. Satıra tıklayınca belirtisi ve çıkış yolu açılır." data-en="Seven layers, seven materials. The numbers are not research results. They are a relative scale to compare the layers. Click a row to see the sign and the way out.">Yedi katman.</p>
+  </div>
+  <table class="cast">
+    <thead><tr>
+      <th data-tr="Katman" data-en="Layer">Katman</th><th data-tr="Konu" data-en="Topic">Konu</th>
+      <th style="width:190px" data-tr="Yoğunluk" data-en="Strength">Yoğunluk</th><th style="width:80px" data-tr="Ölçü" data-en="Scale">Ölçü</th>
+    </tr></thead>
+    <tbody id="compBody"></tbody>
+  </table>
+  <div class="notes" id="compDetail" style="display:none;border-top:1px solid #d8cbae;margin-top:0"></div>
+</section>
+
+<section class="chapter" id="sahneler">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM IV · SAHNELER" data-en="PART IV · SCENES">BÖLÜM IV</div>
+    <h2 data-tr-html="Çekilecek <span>21 Sahne</span>" data-en-html="21 Scenes <span>to Shoot</span>">21 Sahne</h2>
+    <p data-tr="Hepsini çekmek zorunda değilsin. Kolay sahneden başla. Her sahnenin süresi ve çekim notu altında." data-en="You do not have to shoot them all. Start with the easy scene. Each scene has its time and shooting note below.">Hepsini çekmek zorunda değilsin.</p>
+  </div>
+  <div class="filters" id="methodFilters">
+    <button data-f="all" class="on" type="button" data-tr="TÜM SAHNELER" data-en="ALL SCENES">TÜM SAHNELER</button>
+    <button data-f="now" type="button" data-tr="BUGÜN ÇEK" data-en="SHOOT TODAY">BUGÜN ÇEK</button>
+    <button data-f="week" type="button" data-tr="BU HAFTA ÇEK" data-en="SHOOT THIS WEEK">BU HAFTA ÇEK</button>
+    <button data-f="rad" type="button" data-tr="FİNAL SAHNELERİ" data-en="FINAL SCENES">FİNAL SAHNELERİ</button>
+  </div>
+  <div class="scenes" id="methodGrid"></div>
+  <div class="pullquote"><div class="t" data-tr="&#34;AKIŞTAN ÖNCE ARAMA. GÜN, SENİN ARADIĞINLA BAŞLASIN.&#34;" data-en="&#34;SEARCH BEFORE FEED. LET THE DAY START WITH WHAT YOU LOOK FOR.&#34;">"AKIŞTAN ÖNCE ARAMA."</div><div class="w" data-tr="YÖNETMEN NOTU" data-en="DIRECTOR'S NOTE">YÖNETMEN NOTU</div></div>
+</section>
+
+<section class="chapter" id="program-notlari">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM V · PROGRAM NOTLARI" data-en="PART V · PROGRAMME NOTES">BÖLÜM V</div>
+    <h2 data-tr-html="Platform <span>Rehberi</span>" data-en-html="Platform <span>Guide</span>">Platform <span>Rehberi</span></h2>
+    <p data-tr="Her platform için çekim talimatı. Adımlar 3 Kasım 2026 günü resmi yardım sayfalarına bakılarak kontrol edildi. Menü adı değişmişse sorun sende değildir." data-en="Shooting notes for each platform. Steps were checked against official help pages on 3 November 2026. If a menu name changed, it is not your fault.">Her platform için talimat.</p>
+  </div>
+  <div class="showtimes" id="platTabs"></div>
+  <div class="notes" id="platBody"></div>
+</section>
+
+<section class="chapter" id="biletler">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM VI · BİLETLER" data-en="PART VI · TICKETS">BÖLÜM VI</div>
+    <h2 data-tr-html="7 Günlük <span>Gösterim</span>" data-en-html="7 Days of <span>Screenings</span>">7 Günlük <span>Gösterim</span></h2>
+    <p data-tr="Her gün bir bilet. Gösterimi bitirince kutuyu işaretle, bilet yırtılmış sayılır. İlerleme yalnız bu cihazda durur. Günde 15 ila 25 dakika yeter." data-en="One ticket per day. When the screening is done, tick the box and the ticket counts as torn. Your progress stays on this device only. 15 to 25 minutes a day is enough.">Her gün bir bilet.</p>
+  </div>
+  <p style="text-align:center" class="sans"><b id="progLabel">0 / 7</b> &nbsp;<span style="color:#7a6a4f" id="progMsg"></span> &nbsp;[ <a href="#" id="resetProg" data-tr="biletleri sıfırla" data-en="reset the tickets">biletleri sıfırla</a> ]</p>
+  <div class="tickets" id="daysList"></div>
+</section>
+
+<section class="chapter" id="surpriz">
+  <div class="chap-head">
+    <div class="chap-no" data-tr="BÖLÜM VII · SÜRPRİZ SEANS" data-en="PART VII · SURPRISE SCREENING">BÖLÜM VII</div>
+    <h2 data-tr-html="Senaryoda <span>Olmayan</span> Sahne" data-en-html="The Scene <span>Not in the Script</span>">Senaryoda <span>Olmayan</span> Sahne</h2>
+    <p data-tr="Algoritmanın panzehiri daha iyi öneri değildir. Önerisiz seçimdir: zar, rastgele sokak, kapağını görmeden aldığın kitap." data-en="The cure for personal picks is not a better pick. It is a pick with no recommendation: a die, a random street, a book you take without seeing praise for it.">Önerisiz seçimdir.</p>
+  </div>
+  <div class="surprise">
+    <div class="surp-red">
+      <div class="lbl" data-tr="SÜRPRİZ SEANS · İÇİ BİLİNMEZ" data-en="SURPRISE SCREENING · CONTENT UNKNOWN">SÜRPRİZ SEANS</div>
+      <div class="big" id="escapeCard"></div>
+      <div id="escapeCardSub" style="font-size:13.5px;opacity:.92" class="sans"></div>
+      <p><button id="drawCard" type="button" data-tr="SEANSI AÇ" data-en="OPEN THE SCREENING">SEANSI AÇ</button></p>
+    </div>
+    <div class="surp-paper">
+      <div class="sans" style="font-size:11px;letter-spacing:3px;color:var(--red)" data-tr="KAYIP EŞYA OFİSİ" data-en="LOST PROPERTY OFFICE">KAYIP EŞYA OFİSİ</div>
+      <div class="big" id="diceText"></div>
+      <div id="diceSub" style="color:#7a6a4f;font-size:13.5px" class="sans"></div>
+      <p><button class="btn btn-paper" id="rollTopic" type="button" style="padding:9px 16px" data-tr="Konu at" data-en="Roll topic">Konu at</button> <button class="btn btn-paper" id="rollAll" type="button" style="padding:9px 16px" data-tr="Üçünü at" data-en="Roll all three">Üçünü at</button></p>
+      <p style="font-size:13.5px" data-tr-html="<b>Sıkıcı telefon provası:</b> Bir gün ekranı gri yap, sosyal uygulamaları ana ekrandan kaldır, bildirimleri kapat. Akşam sebepsiz açılışları say." data-en-html="<b>Boring phone rehearsal:</b> For one day turn on grayscale, take social apps off the home screen and turn off alerts. At night count the times you opened it for no reason.">Sıkıcı telefon provası.</p>
+    </div>
+  </div>
+
+  <div class="chap-head" style="margin-top:44px">
+    <div class="chap-no" data-tr="FİNAL · ÇIKIŞTA" data-en="FINALE · AT THE EXIT">FİNAL</div>
+    <h2 data-tr-html="Perde <span>Kapanırken</span>" data-en-html="As the Curtain <span>Falls</span>">Perde <span>Kapanırken</span></h2>
+  </div>
+  <div class="rules"><ol id="rulesList"></ol>
+    <p data-tr="Kapı kilitli değildi, sadece sana özel değildi. Çıkış interneti bırakmak değildir. Daha az sana özel, bazen daha sıkıcı, ama daha çok senin seçtiğin bir kullanımdır." data-en="The door was not locked. It was just not made for you. Getting out does not mean leaving the internet. It means a use that is less made for you, at times duller, but more picked by you.">Kapı kilitli değildi.</p>
+  </div>
+  <div class="waveband"></div>
+</section>
+
+<div class="billing" id="kaynaklar">
+  <div class="block" id="billingBlock"></div>
+  <div class="thanks" data-tr="İZLEDİĞİN İÇİN DEĞİL, ÇIKTIĞIN İÇİN TEŞEKKÜRLER" data-en="THANK YOU, NOT FOR WATCHING, FOR LEAVING">TEŞEKKÜRLER</div>
+</div>
+
+<script>
+"use strict";
+function $(s){return document.querySelector(s)}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+
+var DATA={ tr: { WHY: [
+ ["ÖNERİ MOTORU","BAŞROLDE","İzlediğin, üstünde durduğun, tekrar açtığın her şey sinyal olabilir. Sistem yalnız neyi sevdiğine bakmaz, bir sonrakinde neye bakacağını da tahmin eder. Bugünkü seçimin yarınki listeyi eğitir."],
+ ["FİLTRE BALONU","YARDIMCI ROLDE","Aynı konu iki kişide farklı başlık ve sırayla çıkabilir. Bu herkes için aynı güçte olmaz. Yine de sıralama hep geçmişe bakarsa farklı ve yeni olan az görünür."],
+ ["TELEFON DİNLİYOR MU?","ŞEHİR EFSANESİ","Büyük platformların gizlice mikrofon açıp konuşmalardan reklam hedeflediği iddiası için güvenilir kanıt bulunmadı. Şirketler de reddediyor. Bu his konum, geçmiş aramalar ve benzer kişilerin davranışıyla açıklanabilir."],
+ ["FİYAT","GİZLİ SAHNEDE","Fiyat saat, talep ve stokla değişir, buna dinamik fiyat denir. Kişisel veriyle fiyat ayrı konudur. FTC'nin Ocak 2025 ilk bulguları bazı aracıların bunu yapabildiğini gösterdi. Her satıcı yapıyor demek değildir."],
+ ["DÜZENSİZ ÖDÜL","KAMERA ARKASINDA","Akış bazen kumar makinesi gibi çalışır. Çoğu sıkıcıdır, arada biri tam sana uyar. Bu düzensizlik bir tane daha isteğini artırabilir."],
+ ["ETİKET","MAKYAJ ODASINDA","Platform sana bir etiket sunar: şu tür dinleyici, şu tür izleyici. Etiketi uzun süre görürsen seçimin de ona uymaya başlayabilir."]
+],
+CREEPS: [["dün gece baktığın ayakkabı hâlâ seni bekliyor","örnek bildirim"],["senin gibiler bundan sonra bunu izliyor","örnek"],["evine yakın tam senlik bir yer açıldı","örnek"],["ruh haline uygun liste hazır","örnek"],["fiyat sana özel düştü, yalnız 2 saat","örnek: her düşüş kişisel değildir"]],
+FEED_P: [["Dün baktığın ayakkabı indirimde, stokta son 2","senin geçmişin"],["İzlediğin dizinin oyuncusundan açıklama","profilin için seçildi"],["Zaten katıldığın görüşü doğrulayan haber","başka açı yok"],["Ruh haline uyan çalma listesi","alışkanlığına göre"],["Herkes bunu konuşuyor: senin çevrenin herkesi","çevrene göre"]],
+FEED_G: [["Günün ana haberi, herkesle aynı başlık","herkese aynı"],["Radyo İlk 40, bu hafta en çok dinlenenler","ortak liste"],["Kitapçıda yeni gelenler rafı","sadece yeni"],["Hava durumu ve maç sonuçları","düz bilgi"],["Bilmediğin konuda bir yazı, bugün denk geldi","sürpriz"]],
+QUIZ: [
+ ["Bir uygulamayı açtığında ilk ne yaparsın?",["Ne arayacağımı bilirim, bulur çıkarım",0],["Ana akışa bakar, ilgimi çekeni açarım",1],["Kaydırmaya başlarım, ne çıkarsa",2],["Ne aradığımı unuturum, akış götürür",3]],
+ ["Reklamlar için hangisi sana yakın?",["Çoğu ilgisizdir",0],["Arasıra ilgimi çeker",1],["Çoğu tam benimle ilgilidir",2],["Dün konuştuğumuz şeyin reklamı çıkıyor gibi",3]],
+ ["Yeni müzik, video ve yazıyı nasıl bulursun?",["Radyo, arkadaş, kitapçı gibi yollarla",0],["Takip ettiklerimden",1],["Çoğunlukla önerilenlerden",2],["Neredeyse yalnız önerilenlerden",3]],
+ ["Aynı haberi arkadaşınla konuşunca?",["Genelde aynı şeyi görmüşüzdür",0],["Biraz farklı görürüz",1],["Başlık ve vurgu bile farklıdır",2],["Başka internetlerde yaşıyor gibiyiz",3]],
+ ["Bir ürünün fiyatına bakarken?",["Herkes aynı fiyatı görür sanırım",0],["Kampanyaya göre değişir",1],["Başka cihazda fiyat değiştiğini gördüm",2],["Fiyatın bana göre değiştiğine emin gibiyim",3]],
+ ["Telefonun seni ne kadar tanıyor?",["Pek tanımıyor",0],["Bazı zevklerimi biliyor",1],["Beni benden iyi tanıyor gibi",2],["Ruh halimi bile biliyor gibi",3]],
+ ["Son haftada önerilmeyen bir şey kullandın mı?",["Evet, çoğu öyleydi",0],["Birkaç kere",1],["Nadir",2],["Hatırlamıyorum, hep öneriyle",3]],
+ ["Geçmiş ayarların ne durumda?",["Kapattım, arada temizlerim",0],["Bir kısmı kapalı",1],["Hiç dokunmadım",2],["Böyle ayarlar olduğunu bilmiyordum",3]],
+ ["Temiz hesapla başlamak nasıl gelir?",["Rahatlatır",0],["Biraz zor ama olur",1],["Öneriler bozulur diye çekinirim",2],["Düşüncesi bile rahatsız eder",3]],
+ ["Gününün ne kadarı sana özel içerik?",["Azı",0],["Yarısı",1],["Çoğu",2],["Neredeyse tamamı",3]]
+],
+ZONES: [
+ [1,"Akış","ana sayfa, senin için, keşfet",68,"Uygulamayı ne için açtığını unutuyorsun, kırk dakika sonra planlamadığın içeriktesin.","Ana akışı değil kaynağı aç. Takip edilenler veya abonelikler görünümünü kullan, otomatik oynatmayı kapat."],
+ [2,"Öneri","bunu da seversin, sıradaki liste",74,"Yeni bulduklarının neredeyse hepsi sana seçilmiş listelerden geliyor.","Haftada bir önerisiz keşif yap, istemediğin öneride ilgilenmiyorum de."],
+ [3,"Reklam","sana özel reklam, takip hissi",81,"Baktığın ürün seni siteden siteye izliyor.","Google'da kapat, Meta'da sınırla. Android'de reklam kimliğini sil, iPhone'da takip isteklerini reddet."],
+ [4,"Haber ve gündem","herkese başka manşet",78,"Aynı ülkede başka gündemlerdesin, karşı görüş ya yok ya en kötü haliyle var.","İki veya üç kaynağı doğrudan izle, haftada bir genelde okumadığın kaynağa bak."],
+ [5,"Fiyat","dinamik fiyat, kişisel fiyat iddiası",61,"Fiyat saat, stok ve taleple zaten değişir. Kimi durumda konum ve geçmiş de girebilir, sebebi dışarıdan anlamak her zaman kolay değildir.","Oturumu kapatıp başka cihazdan karşılaştır. Fark tek başına kanıt değildir. Sadece bugün yazanda 24 saat bekle."],
+ [6,"Kimlik / etiket","sen busun etiketi",84,"Platform sana kimlik biçiyor, sen de zamanla etikete göre seçiyorsun.","Üç ayda bir geçmişi temizle, takip listene bak, etiketine uymayan şeyler dene."],
+ [7,"Ruh hali","sıkıntı ve yorgunluk anları",92,"Gece geç kullanım ve aynı içeriğe dönme sinyal sayılabilir. Sistem duygunu kesin bilmez, davranıştan tahmin eder.","Gece modu yerine gece sınırı koy. Duygun yükselince ilk tıklamanın öneri olmayacağını önceden kararla."]
+],
+METHODS: [
+ ["now","Geçmişi Duraklat","SAHNE 01 · İÇ MEKAN","5 dk","Geçmiş durunca yeni izlediklerin öneriyi aynı biçimde eğitmez.",["YouTube: myactivity.google.com","Instagram: içerik tercihleri, sıfırla","TikTok: etkinlik merkezi, temizle"]],
+ ["now","Reklamı Kapat","SAHNE 02 · DIŞ MEKAN","5 dk","Google'da kapat, Meta'da sınırla. Reklam kaybolmaz, hedefleme düşer.",["myadcenter.google.com","Meta: konuları sınırla","Android kimliği sil, iPhone takibi reddet"]],
+ ["now","Otomatik Oynatmayı Durdur","SAHNE 03 · KESME","3 dk","Sonraki sahne sen basmadan başlamasın.",["YouTube, Netflix, Instagram ayarları"]],
+ ["now","Ana Ekranı Boşalt","SAHNE 04 · EV","5 dk","Sosyal uygulamayı ana ekrandan kaldır, silme.",["Ana ekranda yalnız araçlar"]],
+ ["now","Zilleri Sustur","SAHNE 05 · SESSİZ","5 dk","Bildirim kişisel akışın zilidir.",["Yalnız arama ve mesaj kalsın"]],
+ ["now","Konum Kartını Sakla","SAHNE 06 · HARİTA","10 dk","Konum ve izinler seçimi besler.",["Konumu kapat veya yaklaşık yap"]],
+ ["week","Tarih Sırasına Geç","SAHNE 07 · GERİYE DÖNÜŞ","1 gün","Rütbe yerine zaman sırası.",["Instagram Takip Edilenler","X Takip Edilenler ve Listeler"]],
+ ["week","RSS Kur","SAHNE 08 · MATBAADA","30 dk","Kaynak sana gelir, sıra tarihe göredir.",["10 ila 15 kaynak ekle","Günde toplu oku"]],
+ ["week","Kimliği Böl","SAHNE 09 · İKİ PERDE","20 dk","İş, eğlence ve alışveriş tek profilde birleşmesin.",["Ayrı tarayıcı profilleri","Firefox Containers"]],
+ ["week","Fiyatı Yeniden Çek","SAHNE 10 · PAZARDA","alışkanlık","Şüpheli fiyata temiz oturumla bak. Fark tek başına kanıt değildir.",["Başka cihazdan karşılaştır"]],
+ ["week","Takip Listesini Kes","SAHNE 11 · KURGU ODASI","20 dk","Liste eskiyse akış da eski sana göredir.",["Katmayanı sessize al","Kızgınlıkla izlediklerini bırak"]],
+ ["week","Profilsiz Ara","SAHNE 12 · KÜTÜPHANE","10 dk","Profil oluşturmadığını söyleyen motoru dene.",["DuckDuckGo veya Startpage","İki motorla karşılaştır"]],
+ ["week","Sıkıcı Telefon","SAHNE 13 · PROVA","1 gün","Bir gün gri ekran, bildirim yok.",["Akşam sebepsiz açılışları yaz"]],
+ ["week","İtiraz Et","SAHNE 14 · REPLİK","sürekli","İlgilenmiyorum da bir sinyaldir.",["Instagram 30 gün ertele","TikTok akışı yenile"]],
+ ["rad","Temiz Hesap Aç","FİNAL 01 · YENİ FİLM","15 dk","Takipsiz başlamak dışarıyı gösterir.",["İlk hafta kimseyi izleme"]],
+ ["rad","Profiline Uyma","FİNAL 02 · DOĞAÇLAMA","sürekli","Bilerek profil dışı şeyler dene. Takibi durdurmaz, profili köreltir.",["Bilmediğin 3 konuda içerik bitir"]],
+ ["rad","Uygulamayı Bırak, Webe Geç","FİNAL 03 · SET DEĞİŞİR","karar","Web sürümü kimine daha sakin gelir.",["Sosyal medyayı tarayıcıdan kullan"]],
+ ["rad","30 Gün Akışsız","FİNAL 04 · UZUN PLAN","30 gün","Uygulamayı silme, akışı açma.",["Yerine kitap, liste, yürüyüş"]],
+ ["rad","Basit Telefona Geç","FİNAL 05 · HAFTA SONU","hafta sonu","Yalnız arama ve mesaj.",["Eski telefonu kullan, ailene haber ver"]],
+ ["rad","Verini İndir, Oku","FİNAL 06 · ARŞİV","30 dk","Tutulan veriyi dosyada görmek düşündürür.",["Google Takeout, Meta araçları"]],
+ ["rad","Zar At","FİNAL 07 · SON SAHNE","sürekli","Senaryoyu zar yazsın, profil değil.",["Haftada bir zar kararı","Ayda bir bilmediğin semt"]]
+],
+DAYS: [
+ ["1. GÜN","Kapatma Gösterimi",["Google'da reklamı kapat, Meta'da sınırla","YouTube geçmişini duraklat","Reklam kimliğini sil veya takibi reddet"]],
+ ["2. GÜN","Akış Diyeti",["Takip Edilenler veya Abonelikler kullan","Uygulamayı ana ekrandan kaldır","Otomatik oynatma ve bildirimleri kapat"]],
+ ["3. GÜN","Kimlik Düzeni",["Tarayıcıda ikinci profil aç","Profilsiz aramayı bir hafta varsayılan yap"]],
+ ["4. GÜN","Şaşırtma Seansı",["Bilmediğin konuda bir içerik bitir","Bilmediğin türde bir albüm dinle","Sürpriz seanstan 2 kart aç"]],
+ ["5. GÜN","Sıkıcı Telefon",["Gri ekranı akşama kadar dene","Sosyal uygulamalar tek klasörde","Şarjı yatak odası dışında bırak"]],
+ ["6. GÜN","Çevrimdışı Matine",["Akış uygulamalarını yarım gün açma","Radyo ve uzun yazı","Bakma isteklerini not al"]],
+ ["7. GÜN","Final: Kendi Düzenin",["10 ila 15 kaynağı RSS veya bültene bağla","Üç ayda bir bakım hatırlatması kur"]]
+],
+CARDS: ["Kitapçıda üçüncü rafa git, gözünü kapat, ilk kitabı 20 sayfa oku.","Haritada gitmediğin bir semti seç, yorumlara bakmadan yürü.","Bugün radyoyu aç, ne çalarsa onu dinle.","Bir arkadaşına sor: seni son zamanlarda şaşırtan ne oldu?","Bilmediğin bir mutfağın yemeğini ilk gördüğün yerde ye.","Bugün videoları yalnız aramayla bul, ana sayfaya dokunma.","Bir dergiyi baştan sona oku, ilgisiz yazılar dahil.","Rastgele otobüse bin, bilmediğin durakta in, 15 dakika yürü.","Birine mektup yaz, önerilen cevapları kullanma.","Bugün sana özel yazan her düğmeyi es geç.","Akşam yemeğini tarifsiz, evde ne varsa ondan yap.","Bugün 15 dakika sıkıl: izleme, dinleme, kaydırma yok.","Podcasti son bölümden değil ilk bölümden başlat.","Kütüphanede başkalarının iade ettiklerine bak.","Şehrinde turist ol, en turistik yere ilk kez görür gibi bak."],
+TOPICS: ["derin deniz canlıları","orta çağda günlük hayat","uzay çöpleri","unutulmuş buluşlar","eski haritalar","kayıp diller","tren yolculukları","deniz fenerleri","buzul bilimi"],
+GENRES: ["caz füzyon","klasik hint müziği","bilmediğin bir albüm","film müzikleri","başka dilde rap","oda müziği"],
+PLACES: ["gitmediğin semt","aynı sokağın tersi","en yakın sahil","kapalı çarşı","kütüphane okuma salonu","eski istasyon"],
+PLATFORMS: {
+ youtube:{label:"YouTube · 14:00",steps:[["Geçmişi duraklat","myactivity.google.com adresinde YouTube Geçmişini duraklat, eski etkinliği istersen sil. Geçmiş kapalıyken ana sayfa önerileri azalabilir veya boş kalabilir."],["Abonelikleri kullan","Ana sayfa öneridir, Abonelikler seçimindir."],["Otomatik oynatmayı kapat","Her bitiş bir karar yeri olsun."],["İtiraz et","Üç noktadan İlgilenmiyorum, kanal için Kanalı önerme."]]},
+ sosyal:{label:"Instagram / TikTok · 16:30",steps:[["Takip akışını kullan","Instagram sol üstten Takip Edilenler, Meta bunu tarih sıralı anlatır. TikTok'ta Takip Ediliyor."],["Akışı sıfırla veya ertele","TikTok: Ayarlar ve gizlilik, İçerik tercihleri, akışı yenile. Instagram: İçerik tercihleri, önerilen içeriği sıfırla. Ayrıca önerilen gönderileri 30 gün erteleyebilirsin."],["Reklamı sınırla","Meta Hesap Merkezi'nde konuları ve Meta dışı etkinliği sınırla. Reklam kapanmaz. TikTok'ta Ayarlar ve gizlilik, Reklamlar bölümünde kişiselleştirilmiş reklamları kapat, aynı bölümden TikTok dışı etkinliği de temizleyebilirsin. Etkisi bölgeye göre değişir."]]},
+ google:{label:"Google / Arama · 19:00",steps:[["Reklam kişiselleştirmeyi kapat","myadcenter.google.com adresinde kapat."],["Etkinlik kontrolleri","Web ve Uygulama Etkinliği ve YouTube Geçmişinde duraklatma ve otomatik silmeye bak. Seçenekler 3, 18 ve 36 aydır. Zaman Çizelgesi artık büyük ölçüde cihazda durur."],["Varsayılan aramayı değiştir","Arama geçmişiyle profil oluşturmadığını söyleyen motoru dene. Sonuç yere ve dile göre değişebilir."]]},
+ muzik:{label:"Spotify · 21:00",steps:[["Tat profilinden çıkar","Liste menüsünden hariç tut. Spotify etkinin azalacağını ve 48 saatte görülebileceğini söyler. Aynı parçayı liste dışında dinlersen sayılabilir."],["Özel oturum","Ortak dinlemede aç. Spotify, özel oturumun 6 saat sonra veya uygulama yeniden başlatılınca kendiliğinden kapandığını söyler."]]},
+ alisveris:{label:"Alışveriş · 12:00",steps:[["Göz atma geçmişini kapat","Amazon'da göz atma geçmişi sayfasından kapat veya kaldır."],["Çıkış yapıp karşılaştır","Başka cihazdan bak. Fark tek başına kişisel fiyatı kanıtlamaz."],["Sepeti beklet","24 saat bekle, hâlâ istiyor musun?"]]},
+ video:{label:"Netflix · 23:00",steps:[["İzleme etkinliğini gizle","Tarayıcıda Hesap, Profil, İzleme etkinliği. Netflix gizlenenlerin öneride kullanılmayacağını söyler."],["Kendi listenden seç","Sana özel liste yerine kendi listeni kur, otomatik oynatmayı kapat."]]},
+ haber:{label:"X / Haber · 08:00",steps:[["Takip Edilenler ve Listeler","Sana Özel yerine Takip Edilenler. X Takip Edilenler sıralamasını değiştirmeye başladı. Takip Edilenler sekmesine tekrar dokunup sıralama seçeneği çıkarsa En Yeni (Most Recent) seçimini kullan."],["Kaynağa git","Gündemi 3 veya 4 kaynağın kendi sitesinden al."]]}
+} },
+ en: { WHY: [
+ ["RECOMMENDATION SYSTEM","IN THE LEAD","What you watch, where you pause and what you open again can be signals. The system does not only ask what you like. It guesses what you will look at next. Your pick today trains the list of tomorrow."],
+ ["FILTER BUBBLE","IN A SUPPORTING ROLE","The same topic can come to two people with a different head and order. This is not the same strength for all. Still, if sorting always looks at the past, new and different things get less room."],
+ ["IS THE PHONE LISTENING?","AN URBAN LEGEND","There is no solid proof that big platforms secretly use the mic for ad targeting. The firms deny it too. The feeling can be explained by place, past searches and people who act like you."],
+ ["PRICE","IN A HIDDEN SCENE","Price changes with time, demand and stock. That is dynamic pricing. A price from personal data is a different thing. FTC first findings in January 2025 showed some middlemen could do it. That does not mean every seller does."],
+ ["UNEVEN REWARD","BEHIND THE CAMERA","A feed can work like a slot machine. Most is dull, then one fits you well. That uneven pattern can raise the wish for one more."],
+ ["THE LABEL","IN THE MAKEUP ROOM","A platform offers you a label: this kind of listener, this kind of watcher. If you see it long, your picks can start to fit the label."]
+],
+CREEPS: [["the shoes you saw last night still wait","example note"],["people like you watch this next","example"],["a place you like opened near home","example"],["a list to fit mood is ready","example"],["your price fell, 2 hours only","example: not each fall personal"]],
+FEED_P: [["Shoes you saw yesterday on sale, 2 left","your past"],["News on actor from your show","picked for profile"],["Story backs view you hold, no other side","your bubble"],["Playlist to fit mood","your habit"],["All talk on this: all in your circle","your circle"]],
+FEED_G: [["Main story of day, same head for all","same for all"],["Radio Top 40, most played this week","shared list"],["New books shelf, just new books","just new"],["Weather and match scores","plain facts"],["Piece on topic you know not, came today","surprise"]],
+QUIZ: [
+ ["When you open app, what first?",["Know what look for, find leave",0],["Look home feed open catches",1],["Start scrolling see comes",2],["Forget why came feed takes",3]],
+ ["Ads fits you?",["Most not relevant",0],["Some catch",1],["Most match well",2],["Ads things just talked",3]],
+ ["Find new music video reading?",["Radio friends bookshops",0],["People follow",1],["Mostly recommendations",2],["Near only recommendations",3]],
+ ["Talk news friend?",["Saw same most",0],["Bit different",1],["Head angle differ",2],["Different internets",3]],
+ ["Check price?",["All same think",0],["Changes sales",1],["Saw change other device",2],["Sure changes for me",3]],
+ ["Phone knows you?",["Not well",0],["Some tastes",1],["Better than I do",2],["Mood too seems",3]],
+ ["Last week thing not recommended?",["Yes most",0],["Few times",1],["Rare",2],["No recall all picks",3]],
+ ["History settings?",["Off clear times",0],["Some off",1],["Never touched",2],["Did not know exist",3]],
+ ["Clean account start?",["Relief",0],["Bit hard fine",1],["Fear picks worse",2],["Thought bothers",3]],
+ ["Day content for you?",["Small part",0],["Half",1],["Most",2],["Near all",3]]
+],
+ZONES: [
+ [1,"Feed","home feed, for you, explore",68,"Forget why opened app, 40 min later on things never planned.","Open source not home feed. Use following subscriptions, autoplay off."],
+ [2,"Recommendations","you may like, next list",74,"Near all new finds from lists made for you.","Once week find no pick, say not interested picks not want."],
+ [3,"Ads","personal ads, followed feeling",81,"Product viewed follows site to site.","Off Google limit Meta. Android delete ID iPhone refuse asks."],
+ [4,"News agenda","different head each",78,"Same land different agendas, other side absent worst.","Follow 2 3 sources direct, week source not read most."],
+ [5,"Price","dynamic price personal claims",61,"Price changes hour stock demand any case. Some cases place past enter, cause not always easy tell.","Log out compare other device. Difference alone not proof. Wait 24h only today."],
+ [6,"Identity label","this is you label",84,"Platform assigns identity, time pick as label.","Each 3 months clear history check follows try not fit label."],
+ [7,"Mood","bored tired times",92,"Late night use return same item signals. System not know feeling sure guesses behavior.","Night limit not only mode. Feeling rises decide first click not pick."]
+],
+METHODS: [
+ ["now","Pause History","SCENE 01 · INTERIOR","5 min","When history paused new viewing does not train picks same way.",["YouTube myactivity.google.com","Instagram content preferences reset","TikTok activity centre clear"]],
+ ["now","Turn Ads Off","SCENE 02 · EXTERIOR","5 min","Off Google limit Meta. Ads not go aim down.",["myadcenter.google.com","Meta limit topics","Android delete ID iPhone refuse"]],
+ ["now","Stop Autoplay","SCENE 03 · CUT","3 min","Next scene not start if you do not press.",["YouTube Netflix Instagram settings"]],
+ ["now","Clear Home Screen","SCENE 04 · HOME","5 min","Social off home screen not delete.",["Home tools only"]],
+ ["now","Silence Bells","SCENE 05 · SILENT","5 min","Alerts bell personal feed.",["Calls messages only"]],
+ ["now","Hide Place Card","SCENE 06 · MAP","10 min","Place permissions feed picks.",["Place off or rough"]],
+ ["week","Go Date Order","SCENE 07 · FLASHBACK","1 day","Date place rank.",["Instagram Following","X Following Lists"]],
+ ["week","Set RSS","SCENE 08 · PRINT ROOM","30 min","Sources come you order date.",["Add 10 15 sources","Read batch day"]],
+ ["week","Split Identity","SCENE 09 · TWO ACTS","20 min","Work fun shopping not join one profile.",["Apart browser profiles","Firefox Containers"]],
+ ["week","Reshoot Price","SCENE 10 · MARKET","habit","Look price feels personal clean session. Difference alone not proof.",["Compare other device"]],
+ ["week","Cut Follow List","SCENE 11 · EDIT ROOM","20 min","List old feed old you.",["Mute gave nothing","Drop hate follows"]],
+ ["week","Search No Profile","SCENE 12 · LIBRARY","10 min","Try engine says no profile search history.",["DuckDuckGo Startpage","Compare two engines"]],
+ ["week","Boring Phone","SCENE 13 · REHEARSAL","1 day","One day grey alerts off.",["Write habit opens night"]],
+ ["week","Push Back","SCENE 14 · LINE","ongoing","Not interested signal too.",["Instagram snooze 30 days","TikTok refresh feed"]],
+ ["rad","Open Clean Account","FINALE 01 · NEW FILM","15 min","Start no follows shows outside.",["First week follow no one"]],
+ ["rad","Do Not Fit Profile","FINALE 02 · IMPROV","ongoing","Try outside profile purpose. Not stop tracking makes less sharp.",["Finish content 3 topics not know"]],
+ ["rad","Leave App Go Web","FINALE 03 · SET CHANGE","your call","Web can feel calmer some.",["Social in browser"]],
+ ["rad","30 Days No Feed","FINALE 04 · LONG TAKE","30 days","Not delete app not open feed.",["Book list walk place"]],
+ ["rad","Basic Phone","FINALE 05 · WEEKEND","weekend","Calls messages only.",["Old phone tell family"]],
+ ["rad","Download Data Read","FINALE 06 · ARCHIVE","30 min","See data file makes think.",["Google Takeout Meta tools"]],
+ ["rad","Roll Dice","FINALE 07 · LAST SCENE","ongoing","Script by dice not profile.",["One die choice week","Area not know month"]]
+],
+DAYS: [
+ ["DAY 1","Turn Off Screening",["Ads off Google limit Meta","Pause YouTube history","Delete ad ID refuse asks"]],
+ ["DAY 2","Feed Diet",["Following Subscriptions use","App off home screen","Autoplay alerts off"]],
+ ["DAY 3","Identity Order",["Second browser profile","No profile search default week"]],
+ ["DAY 4","Surprise Screening",["Finish content topic not know","Album type not know","Open 2 surprise cards"]],
+ ["DAY 5","Boring Phone",["Grey screen evening","Social apps one folder","Charge outside bedroom"]],
+ ["DAY 6","Offline Matinee",["Feed apps not open half day","Radio long piece","Write urges look"]],
+ ["DAY 7","Finale Own Order",["Link 10 15 sources RSS newsletter","Reminder each 3 months"]]
+],
+CARDS: ["Bookshop third shelf close eyes first book 20 pages.","Map area never went walk no reviews.","Radio on today play comes.","Ask friend what surprised late.","Dish kitchen never tried first place see.","Videos search only not touch home.","Magazine start end parts no interest.","Random bus stop not know walk 15 min.","Letter one not use suggested replies.","Skip buttons say for you today.","Dinner no recipe what home.","Be bored 15 min watch play scroll nothing.","Podcast first episode not last.","Library books others returned.","Tourist own city most tourist place first time."],
+TOPICS: ["deep sea life","daily life middle ages","space junk","forgotten inventions","old maps","lost languages","train trips","lighthouses","glacier science"],
+GENRES: ["jazz fusion","classical Indian music","album not know","film scores","rap other language","chamber music"],
+PLACES: ["area never went","other way same street","nearest shore","covered market","library reading room","old station"],
+PLATFORMS: {
+ youtube:{label:"YouTube · 14:00",steps:[["Pause history","At myactivity.google.com pause YouTube History delete old if want. History off home picks can go down or empty."],["Use subscriptions","Home pick page subscriptions choice."],["Turn autoplay off","Each end place choose."],["Push back","Three dots Not interested channel Do not recommend."]]},
+ sosyal:{label:"Instagram / TikTok · 16:30",steps:[["Use following","Instagram top left Following Meta date order. TikTok Following tab."],["Reset snooze feed","TikTok Settings privacy Content preferences refresh. Instagram Content preferences reset suggested. Snooze posts 30 days."],["Limit ads","Meta Accounts Centre limit topics off Meta activity. Ads not stop. TikTok: in Settings and privacy, Ads, turn off personalized ads and clear off-TikTok activity there too. Effect can change by region."]]},
+ google:{label:"Google / Search · 19:00",steps:[["Turn ad personalization off","At myadcenter.google.com turn off."],["Activity controls","Web App Activity YouTube History pause auto delete choices 3 18 36 months. Timeline now most device."],["Change default search","Try engine says no profile search history. Results place language change."]]},
+ muzik:{label:"Spotify · 21:00",steps:[["Exclude taste profile","List menu exclude. Spotify says effect down seen 48 hours. Same track outside list count."],["Private session","For shared listening. Spotify says a private session ends by itself after 6 hours, or when the app is restarted."]]},
+ alisveris:{label:"Shopping · 12:00",steps:[["Turn browsing history off","Amazon Browsing History page off or out."],["Log out compare","Other device difference alone not prove personal price."],["Let cart rest","Wait 24 hours still want?"]]},
+ video:{label:"Netflix · 23:00",steps:[["Hide viewing activity","Browser Account Profile Viewing activity. Netflix says hidden not used picks."],["Pick own list","Own watch list place top 10 for you autoplay off."]]},
+ haber:{label:"X / News · 08:00",steps:[["Following Lists","Following place For You. X changed Following rank too. Tap Following again and if a sort choice is shown pick Most Recent."],["Go source","Agenda 3 4 sources own site."]]}
+} } };
+
+var STICKERS={
+ tr:[["<b>03:14</b><br>dün gece baktığın ayakkabı<br>hâlâ seni bekliyor <small>(örnek)</small>"],["<b>senin için seçildi</b><br>ruh haline uygun liste<br>hazır <small>(örnek)</small>"],["<b>herkes konuşuyor</b><br>senin çevrenin herkesi<br><small>(örnek bildirim)</small>"],["<b>fiyat sana düştü</b><br>yalnız 2 saatliğine<br><small>(her düşüş kişisel değildir)</small>"],["<b>bir tane daha?</b><br>akış seni bekliyor"]],
+ en:[["<b>03:14</b><br>the shoes you saw last night<br>are still waiting <small>(example)</small>"],["<b>picked for you</b><br>a list to fit your mood<br>is ready <small>(example)</small>"],["<b>everyone talks</b><br>everyone in your circle<br><small>(example note)</small>"],["<b>your price fell</b><br>for 2 hours only<br><small>(not each fall is personal)</small>"],["<b>one more?</b><br>the feed is waiting"]]
+};
+var RULES={
+ tr:["<b>Sebebinle gir.</b> Her açılışta sor: buraya ne için geldim? Bul, al, çık.","<b>Kaynağa abone ol.</b> Yazarın bülteni, kanalın kendisi, derginin kendisi.","<b>Ortak şeyleri kullan.</b> Radyo, ana haber, kitapçıda rastgele raf. Herkese aynı olan ortak gündem yapar.","<b>Üç ayda bir bakım.</b> Geçmişi temizle, reklam kimliğini yenile veya sil, takip listene bak.","<b>Sıkılmaya izin ver.</b> Günde on dakika içeriksiz kalmak merakın yollarından biridir.","<b>Tahmin edilmesi zor kal.</b> Ara sıra profiline uymayan bir şey yap."],
+ en:["<b>Go in with a reason.</b> Each time ask: what did I come for? Find it, take it, leave.","<b>Follow the source.</b> The writer's newsletter, the channel itself, the paper itself.","<b>Use shared things.</b> Radio, the main news, a random shelf in a bookshop. Things the same for all make a shared agenda.","<b>Care every 3 months.</b> Clear history, renew or delete your ad ID, check who you follow.","<b>Let yourself be bored.</b> Ten minutes a day with no content is one road for curiosity to come back.","<b>Stay hard to guess.</b> Now and then do a thing your profile would not expect."]
+};
+var UI={
+ tr:{langBtn:'EN <small>/ ENGLISH</small>',docTitle:"AKIŞA YAKALANDIN: kişiselleştirilmiş cehennemden kaçış",meta:"Akıntı seni de mi yakaladı? Kişiselleştirilmiş akıştan çıkış: test, sahneler, platform rehberi ve 7 günlük biletler.",question:"Soru",of:"Sonuç hazır",cont:"Devam et",back:"Geri",pickAlert:"Bir seçenek işaretle.",castNo:"OYUNCU",castFoot:"her sahnede var",sceneTag:"SAHNE",feedFor:"Sana kurgulanmış montaj rahattır ama dardır. Geçmişinin izin verdiği kadar yeni şey görürsün.",feedGen:"Herkese aynı montaj bazen ilgisiz gelir. İlgisizlik kusur değildir, henüz sevdiğini bilmediğin şeyle böyle karşılaşırsın.",quizResult:"SEÇME SONUCU",firstScene:"İlk sahnen:",goTickets:"Biletlere git",redo:"Yeniden seçme",layer:"KATMAN",sign:"Belirti:",way:"Çıkış:",notMeasure:"ölçüm değildir.",noteBtn:"çekim notunu gör",noteHide:"notu gizle",doneStamp:"GÖSTERİM TAMAM",admit:"ADMIT ONE<br>TEK KİŞİLİK",doneLbl:"BİTTİ",prog0:"1. günden başla.",progMid:"Gösterim sürüyor.",progDone:"Bütün biletler kullanıldı. Bakım: üç ayda bir 1. günü tekrarla.",progDoneShort:"gösterim tamam",cardStart:"Seansı açmak için düğmeye bas.",cardSub:"Her kart, önerilerde genelde çıkmayan küçük bir sahnedir.",seans:"Seans",cardDo:"bugün bu sahneyi çek.",diceStart:"Merakını mı kaybettin? Üç zar at: konu, tür, yer.",diceSub:"Profilinin bilmediği bir köşeye bak.",diceTopic:"Bugünün konusu:",diceTopicSub:"Bu konuda 15 dakikalık bir yazı veya video ara.",diceAllSub:"Seçimi sen yap, öneriyi zar yapsın."},
+ en:{langBtn:'TR <small>/ TÜRKÇE</small>',docTitle:"CAUGHT BY THE FEED: a way out of personalized hell",meta:"Caught by the feed? A film poster guide out of personalized hell: a test, scenes to shoot, platform notes and 7 days of tickets.",question:"Question",of:"Role is set",cont:"Continue",back:"Back",pickAlert:"Pick one option.",castNo:"CAST",castFoot:"in every scene",sceneTag:"SCENE",feedFor:"A cut made for you is easy but narrow. You see as much new as past allows.",feedGen:"Same cut for all can feel off topic. That is not flaw. It is how you meet things you did not know you like.",quizResult:"AUDITION RESULT",firstScene:"Your first scene:",goTickets:"Go to tickets",redo:"Audition again",layer:"LAYER",sign:"Sign:",way:"Way out:",notMeasure:"is not a measurement.",noteBtn:"see shooting note",noteHide:"hide note",doneStamp:"SCREENING DONE",admit:"ADMIT ONE",doneLbl:"DONE",prog0:"Start day 1.",progMid:"Screening goes on.",progDone:"All tickets used. Upkeep repeat day 1 each 3 months.",progDoneShort:"screenings done",cardStart:"Press the button to open the screening.",cardSub:"Each card is a small scene that rarely shows up in recommendations.",seans:"Screening",cardDo:"shoot this scene today.",diceStart:"Lost your curiosity? Roll three dice: topic, type, place.",diceSub:"Look at a corner your profile does not know.",diceTopic:"Today topic:",diceTopicSub:"Search 15 minute piece video this.",diceAllSub:"You pick dice suggest."}
+};
+var BILL={
+ tr:'BİLGİLER ÖNCE RESMİ YARDIM SAYFALARINDAN KONTROL EDİLDİ · FİYAT KONUSUNDA <a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-surveillance-pricing-study-indicates-wide-range-personal-data-used-set-individualized-consumer" target="_blank" rel="noopener">FTC 17 OCAK 2025 İLK BULGULARI</a> · GOOGLE <a href="https://myactivity.google.com/" target="_blank" rel="noopener">MYACTIVITY</a> VE <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">REKLAM MERKEZİM</a> · YOUTUBE <a href="https://support.google.com/youtube/answer/6342839" target="_blank" rel="noopener">ÖNERİ AYARLARI</a> · INSTAGRAM <a href="https://help.instagram.com/556617736965724/" target="_blank" rel="noopener">ÖNERİLENİ SIFIRLA</a> · TIKTOK <a href="https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/refresh-your-for-you-feed" target="_blank" rel="noopener">AKIŞI YENİLE</a> VE <a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/control-your-off-tiktok-data" target="_blank" rel="noopener">TIKTOK DIŞI ETKİNLİK</a> · SPOTIFY <a href="https://support.spotify.com/us/article/exclude-playlists-or-tracks-from-your-taste-profile/" target="_blank" rel="noopener">TAT PROFİLİ</a> VE <a href="https://support.spotify.com/us/article/private-listening/" target="_blank" rel="noopener">ÖZEL OTURUM (6 SAAT)</a> · NETFLIX <a href="https://help.netflix.com/en/node/22205" target="_blank" rel="noopener">İZLEME GEÇMİŞİ</a> · REKLAM KİMLİĞİ <a href="https://www.eff.org/deeplinks/2022/05/how-disable-ad-id-tracking-ios-and-android-and-why-you-should-do-it-now" target="_blank" rel="noopener">EFF REHBERİ</a> · X NOTU: TAKİP EDİLENLER SIRALAMASI DEĞİŞİYOR, VARSA SIRALAMA SEÇENEĞİNDEN EN YENİYİ SEÇ · FİYAT DEĞİŞİMİ TEK BAŞINA KİŞİSEL FİYATI GÖSTERMEZ · TASARIM NOTU: BU SAYFA CAUGHT BY THE TIDES AFİŞİNİN MALZEMESİYLE KURULDU, AFİŞİN KENDİSİ DEĞİLDİR · ÇEREZ YOK, ANALİTİK YOK, HESAP YOK. TEST VE BİLET BİLGİSİ YALNIZ KENDİ TARAYICINDA DURUR.',
+ en:'FACTS WERE CHECKED FIRST AGAINST OFFICIAL HELP PAGES · ON PRICE <a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-surveillance-pricing-study-indicates-wide-range-personal-data-used-set-individualized-consumer" target="_blank" rel="noopener">FTC FIRST FINDINGS, 17 JANUARY 2025</a> · GOOGLE <a href="https://myactivity.google.com/" target="_blank" rel="noopener">MY ACTIVITY</a> AND <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">MY AD CENTER</a> · YOUTUBE <a href="https://support.google.com/youtube/answer/6342839" target="_blank" rel="noopener">RECOMMENDATION SETTINGS</a> · INSTAGRAM <a href="https://help.instagram.com/556617736965724/" target="_blank" rel="noopener">RESET SUGGESTED CONTENT</a> · TIKTOK <a href="https://support.tiktok.com/en/account-and-privacy/account-privacy-settings/refresh-your-for-you-feed" target="_blank" rel="noopener">REFRESH YOUR FEED</a> AND <a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/control-your-off-tiktok-data" target="_blank" rel="noopener">OFF-TIKTOK DATA</a> · SPOTIFY <a href="https://support.spotify.com/us/article/exclude-playlists-or-tracks-from-your-taste-profile/" target="_blank" rel="noopener">TASTE PROFILE</a> AND <a href="https://support.spotify.com/us/article/private-listening/" target="_blank" rel="noopener">PRIVATE SESSION (6 HOURS)</a> · NETFLIX <a href="https://help.netflix.com/en/node/22205" target="_blank" rel="noopener">VIEWING HISTORY</a> · AD ID <a href="https://www.eff.org/deeplinks/2022/05/how-disable-ad-id-tracking-ios-and-android-and-why-you-should-do-it-now" target="_blank" rel="noopener">EFF GUIDE</a> · NOTE ON X: THE FOLLOWING RANK IS CHANGING, USE THE SORT OPTION FOR MOST RECENT IF SHOWN · A PRICE CHANGE ALONE DOES NOT SHOW A PERSONAL PRICE · DESIGN NOTE: THIS PAGE IS BUILT WITH THE MATERIALS OF THE CAUGHT BY THE TIDES POSTER. IT IS NOT THE POSTER ITSELF. · NO COOKIES, NO ANALYTICS, NO ACCOUNT. YOUR TEST AND TICKETS STAY IN YOUR OWN BROWSER.'
+};
+var QUIZ_R={
+ tr:[
+  ["Kendi sahnesini yazan","İnterneti hâlâ büyük ölçüde kendi şartlarınla kullanıyorsun. Öneri var ama filmi o yönetmiyor.","Bakım için bugün çek sahnelerinden biri yeter."],
+  ["Yönetmenle pazarlık eden","Kişiselleştirme işini kolaylaştırıyor ama kadrajı daraltmaya başlamış. Müdahale için iyi bir çekim günü.","En çok kullandığın platformda geçmişi duraklat."],
+  ["Senaryoyu ezberleyen","Öneriler zevkini izlemekten çok biçimlendirmeye başlamış. Telefonun seni tanıması artık rahatlık değil, yönlendirme.","Bugün reklam ayarlarından başla, biletlerde 1. gün."],
+  ["Akıntıda sürüklenen","Gördüklerinin neredeyse tamamı profilinden üretiliyor. Bu oyuncu hatası değildir, set böyle kurulmuş. Sinyal azalırsa akıntı da yavaşlar.","Önce tek uygulama seç, geçmişini bugün kapat."]],
+ en:[
+  ["Writes own scene","You use internet most on own terms. Picks exist but do not direct film.","One shoot today scene enough for upkeep."],
+  ["Bargains with director","Picks make easy but started to narrow frame. Good day to step in.","Pause history on platform use most."],
+  ["Knows script by heart","Picks started to shape taste not only follow. Phone knows feeling works as steering not comfort.","Start ad settings today, tickets day 1."],
+  ["Drifts in current","Near all you see made from profile. Not actor fault, set built so. If signals down current slows.","Pick one app first, pause history today."]]
+};
+
+var lang="tr";
+try{lang=localStorage.getItem("eph_lang")||"tr"}catch(e){}
+if(lang!=="tr"&&lang!=="en")lang="tr";
+function D(){return DATA[lang]}
+function U(){return UI[lang]}
+
+var creepI=0,feedMode="p",quizStep=0,quizAns=[],methodFilter="all",platSel="youtube",lastCard=-1;
+var PROG_KEY="eph_protocol_v1";
+function loadProg(){try{return JSON.parse(localStorage.getItem(PROG_KEY))||{}}catch(e){return{}}}
+function saveProg(p){try{localStorage.setItem(PROG_KEY,JSON.stringify(p))}catch(e){}}
+var prog=loadProg();
+
+function renderWhy(){
+  $("#whyGrid").innerHTML=D().WHY.map(function(w,i){return '<article class="scene"><span class="tape"></span><div class="no">'+U().castNo+' 0'+(i+1)+' · '+esc(w[1])+'</div><h3>'+esc(w[0])+'</h3><p>'+esc(w[2])+'</p><div class="foot"><span class="price">₺0</span><span class="sans" style="color:#7a6a4f">'+U().castFoot+'</span></div></article>'}).join("");
+}
+function renderStickers(){
+  document.querySelectorAll("[data-sticker]").forEach(function(el,i){el.innerHTML=STICKERS[lang][i][0]});
+}
+function renderFeed(){
+  var data=feedMode==="p"?D().FEED_P:D().FEED_G,html="";
+  if(feedMode==="p"){var c=D().CREEPS[creepI%D().CREEPS.length];html+='<p style="margin:6px 0"><b>'+esc(c[0])+'</b> <span style="color:#7a6a4f;font-size:12.5px" class="sans">('+esc(c[1])+')</span></p>'}
+  html+=data.map(function(f){return '<p style="margin:6px 0"><span class="sans" style="color:var(--red);font-size:11px;letter-spacing:2px">'+U().sceneTag+'</span> &nbsp;'+esc(f[0])+' <span style="color:#7a6a4f;font-size:12.5px" class="sans">· '+esc(f[1])+'</span></p>'}).join("");
+  $("#feedBox").innerHTML=html;
+  $("#feedNote").textContent=feedMode==="p"?U().feedFor:U().feedGen;
+  $("#btnFeedP").style.fontWeight=feedMode==="p"?"700":"400";
+  $("#btnFeedG").style.fontWeight=feedMode==="g"?"700":"400";
+}
+function renderQuiz(){
+  var QUIZ=D().QUIZ;
+  if(quizStep>=QUIZ.length){renderQuizResult();return}
+  $("#quizBar").value=quizStep;$("#quizStep").textContent=U().question+" "+(quizStep+1)+" / 10";
+  var item=QUIZ[quizStep];
+  $("#quizBox").innerHTML='<fieldset><legend>'+(quizStep+1)+'. '+esc(item[0])+'</legend>'+item.slice(1).map(function(o,i){return '<label><input type="radio" name="qq" value="'+i+'"> '+esc(o[0])+'</label>'}).join("")+'<p style="margin-top:12px"><button class="btn btn-red" type="button" id="qNext" style="padding:10px 18px">'+U().cont+'</button> '+(quizStep>0?'<button class="btn btn-paper" type="button" id="qBack" style="padding:10px 16px">'+U().back+'</button>':'')+'</p></fieldset>';
+  $("#qNext").addEventListener("click",function(){var s=document.querySelector('input[name="qq"]:checked');if(!s){alert(U().pickAlert);return}quizAns[quizStep]=Number(s.value);quizStep++;renderQuiz()});
+  var b=$("#qBack");if(b)b.addEventListener("click",function(){quizStep--;renderQuiz()});
+}
+function renderQuizResult(){
+  var QUIZ=D().QUIZ;
+  $("#quizBox").innerHTML="";$("#quizBar").value=10;$("#quizStep").textContent=U().of;
+  var sc=quizAns.reduce(function(s,a,i){return s+QUIZ[i][a+1][1]},0);
+  var idx=sc<=7?0:(sc<=14?1:(sc<=21?2:3)),r=QUIZ_R[lang][idx];
+  var el=$("#quizResult");el.style.display="block";
+  el.innerHTML='<div class="sans" style="font-size:11px;letter-spacing:3px;color:var(--red)">'+U().quizResult+'</div><div class="bigscore">'+sc+'<span style="font-size:18px;color:#7a6a4f"> / 30</span></div><h3 class="display" style="font-size:26px;margin:4px 0">'+esc(r[0])+'</h3><p style="color:#55483a">'+esc(r[1])+'</p><p><b>'+U().firstScene+'</b> '+esc(r[2])+'</p><p><a href="#biletler"><button class="btn btn-red" type="button" style="padding:10px 18px">'+U().goTickets+'</button></a> <button class="btn btn-paper" type="button" id="quizRestart" style="padding:10px 16px">'+U().redo+'</button></p>';
+  $("#quizRestart").addEventListener("click",function(){quizStep=0;quizAns=[];el.style.display="none";renderQuiz()});
+}
+function renderZones(){
+  $("#compBody").innerHTML=D().ZONES.map(function(z,i){return '<tr class="zonerow" data-i="'+i+'"><td><b>'+U().layer+' '+z[0]+'</b><br>'+esc(z[1])+'</td><td style="color:#7a6a4f">'+esc(z[2])+'</td><td><div class="meter"><i style="width:'+z[3]+'%"></i></div></td><td>%'+z[3]+'</td></tr>'}).join("");
+  document.querySelectorAll(".zonerow").forEach(function(b){b.addEventListener("click",function(){
+    document.querySelectorAll(".zonerow").forEach(function(x){x.classList.remove("active")});b.classList.add("active");
+    var z=D().ZONES[Number(b.dataset.i)],d=$("#compDetail");d.style.display="block";
+    d.innerHTML="<b class='display' style='font-size:20px'>"+U().layer+" "+z[0]+": "+esc(lang==="tr"?z[1].toLocaleUpperCase("tr"):z[1].toUpperCase())+"</b><p><b>"+U().sign+"</b> "+esc(z[4])+"</p><p><b>"+U().way+"</b> "+esc(z[5])+"</p><p style='color:#7a6a4f;font-size:12.5px' class='sans'>%"+z[3]+" "+U().notMeasure+"</p>";
+  })});
+}
+function renderMethods(){
+  var list=D().METHODS.filter(function(m){return methodFilter==="all"||m[0]===methodFilter});
+  $("#methodGrid").innerHTML=list.map(function(m){return '<article class="scene"><span class="tape"></span><div class="no">'+esc(m[2])+' · '+esc(m[3])+'</div><h3>'+esc(m[1])+'</h3><p>'+esc(m[4])+'</p><ul>'+m[5].map(function(u){return "<li>"+esc(u)+"</li>"}).join("")+'</ul><div class="foot"><span class="price">₺0</span><button class="linkbtn" type="button">'+U().noteBtn+'</button></div></article>'}).join("");
+  document.querySelectorAll("#methodGrid .linkbtn").forEach(function(b){b.addEventListener("click",function(){var s=b.closest(".scene");s.classList.toggle("open");b.textContent=s.classList.contains("open")?U().noteHide:U().noteBtn})});
+  document.querySelectorAll("#methodFilters button").forEach(function(b){b.classList.toggle("on",b.dataset.f===methodFilter)});
+}
+function renderPlats(){
+  var P=D().PLATFORMS;
+  $("#platTabs").innerHTML=Object.keys(P).map(function(k){return '<button type="button" data-k="'+k+'" class="'+(k===platSel?"on":"")+'">'+esc(P[k].label)+'</button>'}).join("");
+  var p=P[platSel];
+  $("#platBody").innerHTML="<b class='display' style='font-size:21px'>"+esc(lang==="tr"?p.label.toLocaleUpperCase("tr"):p.label.toUpperCase())+"</b><ol>"+p.steps.map(function(s){return "<li><b>"+esc(s[0])+".</b> "+esc(s[1])+"</li>"}).join("")+"</ol>";
+  document.querySelectorAll("#platTabs button").forEach(function(b){b.addEventListener("click",function(){platSel=b.dataset.k;renderPlats()})});
+}
+function renderDays(){
+  $("#daysList").innerHTML=D().DAYS.map(function(d,i){var done=!!prog[i];return '<div class="ticket'+(done?" done":"")+'"><div class="stub"><span class="d">'+esc(d[0])+'</span><span class="adm">'+U().admit+'</span></div><div class="body"><h3>'+esc(d[1])+'</h3><ul>'+d[2].map(function(t){return "<li>"+esc(t)+"</li>"}).join("")+'</ul><span class="stamp-done">'+U().doneStamp+'</span></div><label class="check"><input type="checkbox" data-i="'+i+'" '+(done?"checked":"")+'>'+U().doneLbl+'</label></div>'}).join("");
+  var n=D().DAYS.filter(function(_,i){return prog[i]}).length;
+  $("#progLabel").textContent=n+" / 7 "+U().progDoneShort;
+  $("#progMsg").textContent=n===0?U().prog0:(n<7?U().progMid:U().progDone);
+  document.querySelectorAll("#daysList input").forEach(function(c){c.addEventListener("change",function(){var i=Number(c.dataset.i);if(c.checked)prog[i]=true;else delete prog[i];saveProg(prog);renderDays()})});
+}
+function renderRandom(keep){
+  if(!keep){$("#escapeCard").textContent=U().cardStart;$("#escapeCardSub").textContent=U().cardSub;$("#diceText").textContent=U().diceStart;$("#diceSub").textContent=U().diceSub}
+}
+function applyLang(){
+  document.documentElement.lang=lang;
+  document.title=U().docTitle;
+  var md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",U().meta);
+  $("#langBtn").innerHTML=U().langBtn;
+  document.querySelectorAll("[data-tr]").forEach(function(el){var v=lang==="tr"?el.getAttribute("data-tr"):el.getAttribute("data-en");if(v!==null)el.textContent=v});
+  document.querySelectorAll("[data-tr-html]").forEach(function(el){var v=lang==="tr"?el.getAttribute("data-tr-html"):el.getAttribute("data-en-html");if(v!==null)el.innerHTML=v});
+  $("#billingBlock").innerHTML=BILL[lang];
+  $("#rulesList").innerHTML=RULES[lang].map(function(r){return "<li>"+r+"</li>"}).join("");
+  renderStickers();renderWhy();renderFeed();renderZones();renderMethods();renderPlats();renderDays();renderRandom(false);
+  quizStep=0;quizAns=[];$("#quizResult").style.display="none";renderQuiz();
+  var cd=$("#compDetail");if(cd)cd.style.display="none";
+}
+$("#langBtn").addEventListener("click",function(){lang=lang==="tr"?"en":"tr";try{localStorage.setItem("eph_lang",lang)}catch(e){}applyLang()});
+$("#btnFeedP").addEventListener("click",function(e){e.preventDefault();feedMode="p";renderFeed()});
+$("#btnFeedG").addEventListener("click",function(e){e.preventDefault();feedMode="g";renderFeed()});
+document.querySelectorAll("#methodFilters button").forEach(function(b){b.addEventListener("click",function(){methodFilter=b.dataset.f;renderMethods()})});
+$("#resetProg").addEventListener("click",function(e){e.preventDefault();prog={};saveProg(prog);renderDays()});
+$("#drawCard").addEventListener("click",function(){var C=D().CARDS,i;do{i=Math.floor(Math.random()*C.length)}while(i===lastCard&&C.length>1);lastCard=i;$("#escapeCard").textContent=C[i];$("#escapeCardSub").textContent=U().seans+" "+(i+1)+" / "+C.length+" · "+U().cardDo});
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+$("#rollAll").addEventListener("click",function(){$("#diceText").textContent=(lang==="tr"?"Konu: ":"Topic: ")+pick(D().TOPICS)+" · "+(lang==="tr"?"Tür: ":"Type: ")+pick(D().GENRES)+" · "+(lang==="tr"?"Yer: ":"Place: ")+pick(D().PLACES);$("#diceSub").textContent=U().diceAllSub});
+$("#rollTopic").addEventListener("click",function(){$("#diceText").textContent=U().diceTopic+" "+pick(D().TOPICS);$("#diceSub").textContent=U().diceTopicSub});
+
+applyLang();
+setInterval(function(){creepI++;if(feedMode==="p")renderFeed()},4200);
+</script>
+</body>
+</html>
